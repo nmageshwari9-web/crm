@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e">
+
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/controlsPanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp" />
+
+    <LinearLayout
+        android:id="@+id/controlsPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#16213e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnAutoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="▶ AUTO PLAY"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#e94560"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="⟳ RESET"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#0f3460"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:layout_marginStart="12dp" />
+
+        <Button
+            android:id="@+id/btnFire"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="⚡ FIRE"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#e94560"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARROM ENGINE v1.0 — READY"
+        android:textColor="#e94560"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="#1a1a2e"
+        android:padding="4dp"
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

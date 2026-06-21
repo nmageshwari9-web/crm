@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CarromAutoplay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#e94560</item>
+        <item name="colorPrimaryDark">#0f3460</item>
+        <item name="android:windowBackground">#1a1a2e</item>
+    </style>
+</resources>
